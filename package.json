@@ -1,0 +1,19 @@
+{
+  "name": "mass-declaration",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "集装箱称重门户中换箱与拆装后的资料录入",
+  "engines": {
+    "node": "22.x"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test --test-concurrency=1",
+    "demo": "node scripts/demo.mjs",
+    "start": "node scripts/start.mjs"
+  },
+  "dependencies": {
+    "playwright": "1.56.1"
+  }
+}

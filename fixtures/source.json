@@ -1,0 +1,56 @@
+{
+  "scope": "BOX1",
+  "resources": {
+    "/yard/weighings": {
+      "body": {
+        "approval": "AP1",
+        "weighings": [
+          {
+            "id": "W100",
+            "href": "/yard/weighings/records/W100"
+          }
+        ]
+      }
+    },
+    "/yard/weighings/records/W100": {
+      "body": {
+        "weighing": "W100",
+        "approval": "AP1",
+        "container": "BOX1",
+        "seal": "SEAL1",
+        "cargoKg": "18000",
+        "tareKg": "2200",
+        "approved": true
+      }
+    },
+    "/yard/weighings/relations/W100": {
+      "body": {
+        "restuffing": [
+          {
+            "from": "BOX1",
+            "to": [
+              "BOX2",
+              "BOX3"
+            ]
+          }
+        ],
+        "approvalVersion": 2
+      }
+    }
+  },
+  "portal": {
+    "identity": "weighing",
+    "records": {
+      "W100": {
+        "weighing": "W100",
+        "approval": "AP1",
+        "container": "BOX1",
+        "seal": "SEAL1",
+        "cargoKg": "18000",
+        "tareKg": "2200",
+        "approved": true
+      }
+    },
+    "version": 1
+  }
+}
